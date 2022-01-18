@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Survival Prediction</title>
+
+	</head>
+
+    <body>
+
+<div class="results">
+		<h1 class="heading">Titanic Survival Prediction</h1>
+
+			{% if Prediction==1 %}
+				<h1 class="diab">Prediction: <span class='danger'>Great! Survived.</span></h1>
+<!--					<img src="https://media4.giphy.com/media/ULHGmC04GFEPK/giphy.gif" alt="this slowpoke moves"/>-->
+	<img  src="https://media.giphy.com/media/2Y7vjKwsZ9tpBSuNL4/giphy.gif">
+			{% elif Prediction==0 %}
+				<h1 class="nodiab">Prediction: <span class='safe'>Oops! Died.</span></h1>
+			<img src="https://media.giphy.com/media/3ofT5Ox4TZUiAZQeiY/giphy.gif" alt="this slowpoke moves"  />
+			
+			{% endif %}
+		</div>
+
+
+	</body>
+<style>
+	body{
+	  background-color:rgb(212, 247, 15);
+	  }
+
+h1{
+	color:white;
+	text-align:center
+
+	}
+
+div.results{
+ margin: auto;
+  padding: 2px;
+}
+img{
+  display: block;
+  margin-left: 370px;
+  width: 40%;
+
+}
+.diab{
+color:rgb(196, 18, 231);
+}
+.nodiab{
+color:rgb(0, 60, 128)
+}
+</style>
+</html>
